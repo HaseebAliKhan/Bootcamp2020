@@ -24,13 +24,13 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: installing Node.js
-      run: action/setup-node@v2-beta
+      run: actions/setup-node@v2-beta
       with:
         node-version: 12
 
     # Runs a set of commands using the runners shell
     - name: Installing surge
-      run: npm install --global
+      run: npm install --global surge
       name: deploying using surge
       run: surge ./ haseeb.surge.sh --token ${{ secret:SURGE_TOKEN }}
     
