@@ -33,5 +33,4 @@ jobs:
       run: npm install --global
       name: deploying using surge
       run: surge ./ haseeb.surge.sh --token ${{ secret:SURGE_TOKEN }}
-        echo Add other actions to build,
-        echo test, and deploy your project.
+    
